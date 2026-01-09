@@ -24,5 +24,10 @@ namespace RED2
         {
             this.tbErrorMessage.Text = msg;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

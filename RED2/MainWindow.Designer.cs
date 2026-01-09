@@ -175,14 +175,14 @@
             this.tcMain.Controls.Add(this.tabAdvanced);
             this.tcMain.Controls.Add(this.tabAbout);
             this.tcMain.ImageList = this.ilFolderIcons;
-            this.tcMain.Location = new System.Drawing.Point(9, 7);
+            this.tcMain.Location = new System.Drawing.Point(9, 6);
             this.tcMain.Multiline = true;
             this.tcMain.Name = "tcMain";
             this.tcMain.Padding = new System.Drawing.Point(10, 5);
             this.tcMain.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tcMain.SelectedIndex = 0;
             this.tcMain.ShowToolTips = true;
-            this.tcMain.Size = new System.Drawing.Size(706, 575);
+            this.tcMain.Size = new System.Drawing.Size(706, 531);
             this.tcMain.TabIndex = 18;
             // 
             // tabSearch
@@ -207,7 +207,7 @@
             this.tabSearch.Location = new System.Drawing.Point(4, 27);
             this.tabSearch.Name = "tabSearch";
             this.tabSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSearch.Size = new System.Drawing.Size(698, 544);
+            this.tabSearch.Size = new System.Drawing.Size(698, 500);
             this.tabSearch.TabIndex = 0;
             this.tabSearch.Text = "Find";
             this.tabSearch.ToolTipText = "Search for empty directories";
@@ -220,22 +220,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbFastModeInfo.BackColor = System.Drawing.SystemColors.Control;
             this.lbFastModeInfo.ForeColor = System.Drawing.Color.Gray;
-            this.lbFastModeInfo.Location = new System.Drawing.Point(107, 257);
+            this.lbFastModeInfo.Location = new System.Drawing.Point(107, 237);
             this.lbFastModeInfo.Name = "lbFastModeInfo";
-            this.lbFastModeInfo.Size = new System.Drawing.Size(346, 13);
+            this.lbFastModeInfo.Size = new System.Drawing.Size(346, 12);
             this.lbFastModeInfo.TabIndex = 18;
-            this.lbFastModeInfo.Text = "[Fast mode is enabled, results will be shown after the process is finished]";
+            this.lbFastModeInfo.Text = "[已启用快速模式，处理完成后将显示结果]";
             this.lbFastModeInfo.Visible = false;
             // 
             // btnShowLog
             // 
             this.btnShowLog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnShowLog.Enabled = false;
-            this.btnShowLog.Location = new System.Drawing.Point(380, 498);
+            this.btnShowLog.Location = new System.Drawing.Point(380, 460);
             this.btnShowLog.Name = "btnShowLog";
-            this.btnShowLog.Size = new System.Drawing.Size(79, 34);
+            this.btnShowLog.Size = new System.Drawing.Size(79, 31);
             this.btnShowLog.TabIndex = 17;
-            this.btnShowLog.Text = "Show &logs";
+            this.btnShowLog.Text = "显示日志(&l)";
             this.btnShowLog.UseVisualStyleBackColor = true;
             this.btnShowLog.Click += new System.EventHandler(this.btnShowLog_Click);
             // 
@@ -245,11 +245,11 @@
             this.btnCancel.Enabled = false;
             this.btnCancel.ImageKey = "cancel";
             this.btnCancel.ImageList = this.ilFolderIcons;
-            this.btnCancel.Location = new System.Drawing.Point(276, 498);
+            this.btnCancel.Location = new System.Drawing.Point(276, 460);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(98, 34);
+            this.btnCancel.Size = new System.Drawing.Size(98, 31);
             this.btnCancel.TabIndex = 6;
-            this.btnCancel.Text = "&Cancel";
+            this.btnCancel.Text = "取消(&C)";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -260,11 +260,11 @@
             this.btnScan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnScan.ImageKey = "search";
             this.btnScan.ImageList = this.ilFolderIcons;
-            this.btnScan.Location = new System.Drawing.Point(13, 497);
+            this.btnScan.Location = new System.Drawing.Point(13, 459);
             this.btnScan.Name = "btnScan";
-            this.btnScan.Size = new System.Drawing.Size(130, 35);
+            this.btnScan.Size = new System.Drawing.Size(130, 32);
             this.btnScan.TabIndex = 4;
-            this.btnScan.Text = "&Find directories";
+            this.btnScan.Text = "查找目录(&F)";
             this.btnScan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnScan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnScan.UseVisualStyleBackColor = true;
@@ -276,11 +276,11 @@
             this.btnDelete.Enabled = false;
             this.btnDelete.ImageKey = "trash";
             this.btnDelete.ImageList = this.ilFolderIcons;
-            this.btnDelete.Location = new System.Drawing.Point(150, 497);
+            this.btnDelete.Location = new System.Drawing.Point(150, 459);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(120, 35);
+            this.btnDelete.Size = new System.Drawing.Size(120, 32);
             this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "&Delete matches";
+            this.btnDelete.Text = "删除匹配项(&D)";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -300,9 +300,9 @@
             this.pnlIcons.Controls.Add(this.label17);
             this.pnlIcons.Controls.Add(this.panel1);
             this.pnlIcons.Controls.Add(this.label12);
-            this.pnlIcons.Location = new System.Drawing.Point(557, 60);
+            this.pnlIcons.Location = new System.Drawing.Point(557, 55);
             this.pnlIcons.Name = "pnlIcons";
-            this.pnlIcons.Size = new System.Drawing.Size(126, 406);
+            this.pnlIcons.Size = new System.Drawing.Size(126, 375);
             this.pnlIcons.TabIndex = 16;
             // 
             // label1
@@ -310,19 +310,19 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 382);
+            this.label1.Location = new System.Drawing.Point(25, 353);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Protected";
+            this.label1.Text = "受保护";
             // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel5.BackColor = System.Drawing.Color.Blue;
-            this.panel5.Location = new System.Drawing.Point(8, 381);
+            this.panel5.Location = new System.Drawing.Point(8, 352);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(15, 15);
+            this.panel5.Size = new System.Drawing.Size(15, 14);
             this.panel5.TabIndex = 21;
             // 
             // panel3
@@ -330,7 +330,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Location = new System.Drawing.Point(8, 325);
+            this.panel3.Location = new System.Drawing.Point(8, 300);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(120, 2);
             this.panel3.TabIndex = 18;
@@ -340,19 +340,19 @@
             this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(25, 359);
+            this.label18.Location = new System.Drawing.Point(25, 331);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(77, 13);
+            this.label18.Size = new System.Drawing.Size(53, 12);
             this.label18.TabIndex = 20;
-            this.label18.Text = "Will be deleted";
+            this.label18.Text = "将被删除";
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.BackColor = System.Drawing.Color.Red;
-            this.panel2.Location = new System.Drawing.Point(8, 358);
+            this.panel2.Location = new System.Drawing.Point(8, 330);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(15, 15);
+            this.panel2.Size = new System.Drawing.Size(15, 14);
             this.panel2.TabIndex = 19;
             // 
             // label17
@@ -360,19 +360,19 @@
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(24, 336);
+            this.label17.Location = new System.Drawing.Point(24, 310);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 13);
+            this.label17.Size = new System.Drawing.Size(53, 12);
             this.label17.TabIndex = 18;
-            this.label17.Text = "Will not be touched";
+            this.label17.Text = "不受影响";
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Location = new System.Drawing.Point(8, 335);
+            this.panel1.Location = new System.Drawing.Point(8, 309);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(15, 15);
+            this.panel1.Size = new System.Drawing.Size(15, 14);
             this.panel1.TabIndex = 17;
             // 
             // label12
@@ -381,35 +381,35 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(4, 6);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 13);
+            this.label12.Size = new System.Drawing.Size(59, 13);
             this.label12.TabIndex = 0;
-            this.label12.Text = "Icon description";
+            this.label12.Text = "图标描述";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 16);
+            this.label6.Location = new System.Drawing.Point(11, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(177, 13);
+            this.label6.Size = new System.Drawing.Size(149, 12);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Please choose a directory to check:";
+            this.label6.Text = "请选择一个目录进行检查：";
             // 
             // lbStatus
             // 
             this.lbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbStatus.Location = new System.Drawing.Point(149, 475);
+            this.lbStatus.Location = new System.Drawing.Point(149, 438);
             this.lbStatus.Name = "lbStatus";
-            this.lbStatus.Size = new System.Drawing.Size(532, 13);
+            this.lbStatus.Size = new System.Drawing.Size(532, 12);
             this.lbStatus.TabIndex = 13;
-            this.lbStatus.Text = "Status text";
+            this.lbStatus.Text = "状态文本";
             // 
             // pbProgressStatus
             // 
             this.pbProgressStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pbProgressStatus.Location = new System.Drawing.Point(14, 475);
+            this.pbProgressStatus.Location = new System.Drawing.Point(14, 438);
             this.pbProgressStatus.Name = "pbProgressStatus";
-            this.pbProgressStatus.Size = new System.Drawing.Size(129, 13);
+            this.pbProgressStatus.Size = new System.Drawing.Size(129, 12);
             this.pbProgressStatus.TabIndex = 12;
             // 
             // tvFolders
@@ -420,10 +420,10 @@
             this.tvFolders.ContextMenuStrip = this.cmStrip;
             this.tvFolders.ImageKey = "folder";
             this.tvFolders.ImageList = this.ilFolderIcons;
-            this.tvFolders.Location = new System.Drawing.Point(14, 60);
+            this.tvFolders.Location = new System.Drawing.Point(14, 55);
             this.tvFolders.Name = "tvFolders";
             this.tvFolders.SelectedImageKey = "folder";
-            this.tvFolders.Size = new System.Drawing.Size(533, 406);
+            this.tvFolders.Size = new System.Drawing.Size(533, 375);
             this.tvFolders.TabIndex = 3;
             this.tvFolders.DoubleClick += new System.EventHandler(this.tvFolders_DoubleClick);
             // 
@@ -446,82 +446,82 @@
             this.cmStrip.Name = "cmStrip";
             this.cmStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.cmStrip.ShowImageMargin = false;
-            this.cmStrip.Size = new System.Drawing.Size(202, 204);
+            this.cmStrip.Size = new System.Drawing.Size(221, 204);
             this.cmStrip.Opening += new System.ComponentModel.CancelEventHandler(this.cmStrip_Opening);
             // 
             // openFolderToolStripMenuItem
             // 
             this.openFolderToolStripMenuItem.Name = "openFolderToolStripMenuItem";
-            this.openFolderToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.openFolderToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.openFolderToolStripMenuItem.Text = "&Open";
             this.openFolderToolStripMenuItem.Click += new System.EventHandler(this.openFolderToolStripMenuItem_Click);
             // 
             // scanOnlyThisDirectoryToolStripMenuItem
             // 
             this.scanOnlyThisDirectoryToolStripMenuItem.Name = "scanOnlyThisDirectoryToolStripMenuItem";
-            this.scanOnlyThisDirectoryToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.scanOnlyThisDirectoryToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.scanOnlyThisDirectoryToolStripMenuItem.Text = "&Search only this directory";
             this.scanOnlyThisDirectoryToolStripMenuItem.Click += new System.EventHandler(this.scanOnlyThisDirectoryToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(217, 6);
             // 
             // toolStripExpandAll
             // 
             this.toolStripExpandAll.Name = "toolStripExpandAll";
-            this.toolStripExpandAll.Size = new System.Drawing.Size(201, 22);
+            this.toolStripExpandAll.Size = new System.Drawing.Size(220, 22);
             this.toolStripExpandAll.Text = "&Expand all";
             this.toolStripExpandAll.Click += new System.EventHandler(this.toolStripExpandAll_Click);
             // 
             // toolStripCollapseAll
             // 
             this.toolStripCollapseAll.Name = "toolStripCollapseAll";
-            this.toolStripCollapseAll.Size = new System.Drawing.Size(201, 22);
+            this.toolStripCollapseAll.Size = new System.Drawing.Size(220, 22);
             this.toolStripCollapseAll.Text = "&Collapse all";
             this.toolStripCollapseAll.Click += new System.EventHandler(this.toolStripCollapseAll_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(217, 6);
             // 
             // protectFolderFromBeingDeletedToolStripMenuItem
             // 
             this.protectFolderFromBeingDeletedToolStripMenuItem.Name = "protectFolderFromBeingDeletedToolStripMenuItem";
-            this.protectFolderFromBeingDeletedToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.protectFolderFromBeingDeletedToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.protectFolderFromBeingDeletedToolStripMenuItem.Text = "&Protect from deletion (once)";
             this.protectFolderFromBeingDeletedToolStripMenuItem.Click += new System.EventHandler(this.protectFolderFromBeingDeletedToolStripMenuItem_Click);
             // 
             // unprotectFolderToolStripMenuItem
             // 
             this.unprotectFolderToolStripMenuItem.Name = "unprotectFolderToolStripMenuItem";
-            this.unprotectFolderToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.unprotectFolderToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.unprotectFolderToolStripMenuItem.Text = "&Unprotect";
             this.unprotectFolderToolStripMenuItem.Click += new System.EventHandler(this.unprotectFolderToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(217, 6);
             // 
             // proToolStripMenuItem
             // 
             this.proToolStripMenuItem.Name = "proToolStripMenuItem";
-            this.proToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.proToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.proToolStripMenuItem.Text = "Add to permanent &ignore list";
             this.proToolStripMenuItem.Click += new System.EventHandler(this.proToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(217, 6);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.deleteToolStripMenuItem.Text = "&Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -530,11 +530,11 @@
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.ImageKey = "exit";
             this.btnExit.ImageList = this.ilFolderIcons;
-            this.btnExit.Location = new System.Drawing.Point(558, 498);
+            this.btnExit.Location = new System.Drawing.Point(558, 460);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(126, 34);
+            this.btnExit.Size = new System.Drawing.Size(126, 31);
             this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "&Exit";
+            this.btnExit.Text = "退出(&E)";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = true;
@@ -545,9 +545,9 @@
             this.tbFolder.AccessibleDescription = "Root directory";
             this.tbFolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbFolder.Location = new System.Drawing.Point(14, 34);
+            this.tbFolder.Location = new System.Drawing.Point(14, 31);
             this.tbFolder.Name = "tbFolder";
-            this.tbFolder.Size = new System.Drawing.Size(533, 20);
+            this.tbFolder.Size = new System.Drawing.Size(533, 21);
             this.tbFolder.TabIndex = 1;
             this.tbFolder.Text = "C:\\";
             this.tbFolder.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbFolder_MouseDoubleClick);
@@ -555,20 +555,20 @@
             // btnChooseFolder
             // 
             this.btnChooseFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChooseFolder.Location = new System.Drawing.Point(558, 33);
+            this.btnChooseFolder.Location = new System.Drawing.Point(558, 30);
             this.btnChooseFolder.Name = "btnChooseFolder";
-            this.btnChooseFolder.Size = new System.Drawing.Size(126, 21);
+            this.btnChooseFolder.Size = new System.Drawing.Size(126, 19);
             this.btnChooseFolder.TabIndex = 2;
-            this.btnChooseFolder.Text = "Browse...";
+            this.btnChooseFolder.Text = "浏览...";
             this.btnChooseFolder.UseVisualStyleBackColor = true;
             this.btnChooseFolder.Click += new System.EventHandler(this.btnChooseFolder_Click);
             // 
             // lblPickAFolder
             // 
             this.lblPickAFolder.AutoSize = true;
-            this.lblPickAFolder.Location = new System.Drawing.Point(10, 13);
+            this.lblPickAFolder.Location = new System.Drawing.Point(10, 12);
             this.lblPickAFolder.Name = "lblPickAFolder";
-            this.lblPickAFolder.Size = new System.Drawing.Size(0, 13);
+            this.lblPickAFolder.Size = new System.Drawing.Size(0, 12);
             this.lblPickAFolder.TabIndex = 3;
             // 
             // tabSettings
@@ -580,7 +580,7 @@
             this.tabSettings.Location = new System.Drawing.Point(4, 27);
             this.tabSettings.Name = "tabSettings";
             this.tabSettings.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSettings.Size = new System.Drawing.Size(698, 544);
+            this.tabSettings.Size = new System.Drawing.Size(698, 500);
             this.tabSettings.TabIndex = 1;
             this.tabSettings.Text = "Settings";
             this.tabSettings.ToolTipText = "Application settings";
@@ -592,21 +592,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbDeleteMode.Controls.Add(this.label15);
             this.gbDeleteMode.Controls.Add(this.cbDeleteMode);
-            this.gbDeleteMode.Location = new System.Drawing.Point(14, 358);
+            this.gbDeleteMode.Location = new System.Drawing.Point(14, 330);
             this.gbDeleteMode.Name = "gbDeleteMode";
-            this.gbDeleteMode.Size = new System.Drawing.Size(669, 84);
+            this.gbDeleteMode.Size = new System.Drawing.Size(669, 78);
             this.gbDeleteMode.TabIndex = 20;
             this.gbDeleteMode.TabStop = false;
-            this.gbDeleteMode.Text = "Delete mode";
+            this.gbDeleteMode.Text = "删除模式";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(16, 27);
+            this.label15.Location = new System.Drawing.Point(16, 25);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(204, 13);
+            this.label15.Size = new System.Drawing.Size(125, 12);
             this.label15.TabIndex = 14;
-            this.label15.Text = "How should empty directories be deleted?";
+            this.label15.Text = "应该如何删除空目录？";
             // 
             // cbDeleteMode
             // 
@@ -614,9 +614,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbDeleteMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDeleteMode.FormattingEnabled = true;
-            this.cbDeleteMode.Location = new System.Drawing.Point(19, 45);
+            this.cbDeleteMode.Location = new System.Drawing.Point(19, 42);
             this.cbDeleteMode.Name = "cbDeleteMode";
-            this.cbDeleteMode.Size = new System.Drawing.Size(631, 21);
+            this.cbDeleteMode.Size = new System.Drawing.Size(631, 20);
             this.cbDeleteMode.TabIndex = 7;
             // 
             // groupBoxExplorerIntegration
@@ -627,53 +627,53 @@
             this.groupBoxExplorerIntegration.Controls.Add(this.btnExplorerRemove);
             this.groupBoxExplorerIntegration.Controls.Add(this.btnExplorerIntegrate);
             this.groupBoxExplorerIntegration.Controls.Add(this.label16);
-            this.groupBoxExplorerIntegration.Location = new System.Drawing.Point(14, 461);
+            this.groupBoxExplorerIntegration.Location = new System.Drawing.Point(14, 426);
             this.groupBoxExplorerIntegration.Name = "groupBoxExplorerIntegration";
-            this.groupBoxExplorerIntegration.Size = new System.Drawing.Size(669, 71);
+            this.groupBoxExplorerIntegration.Size = new System.Drawing.Size(669, 66);
             this.groupBoxExplorerIntegration.TabIndex = 14;
             this.groupBoxExplorerIntegration.TabStop = false;
-            this.groupBoxExplorerIntegration.Text = "Windows Explorer integration";
+            this.groupBoxExplorerIntegration.Text = "Windows Explorer 集成";
             // 
             // lblReqAdmin
             // 
             this.lblReqAdmin.AutoSize = true;
             this.lblReqAdmin.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblReqAdmin.Location = new System.Drawing.Point(16, 43);
+            this.lblReqAdmin.Location = new System.Drawing.Point(16, 40);
             this.lblReqAdmin.Name = "lblReqAdmin";
-            this.lblReqAdmin.Size = new System.Drawing.Size(314, 13);
+            this.lblReqAdmin.Size = new System.Drawing.Size(281, 12);
             this.lblReqAdmin.TabIndex = 26;
-            this.lblReqAdmin.Text = "You need to start the application as an Admin user to change this";
+            this.lblReqAdmin.Text = "你需要以管理员用户身份启动应用程序才能进行更改";
             // 
             // btnExplorerRemove
             // 
             this.btnExplorerRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExplorerRemove.Location = new System.Drawing.Point(532, 24);
+            this.btnExplorerRemove.Location = new System.Drawing.Point(532, 22);
             this.btnExplorerRemove.Name = "btnExplorerRemove";
-            this.btnExplorerRemove.Size = new System.Drawing.Size(119, 34);
+            this.btnExplorerRemove.Size = new System.Drawing.Size(119, 31);
             this.btnExplorerRemove.TabIndex = 25;
-            this.btnExplorerRemove.Text = "Uninstall";
+            this.btnExplorerRemove.Text = "卸载";
             this.btnExplorerRemove.UseVisualStyleBackColor = true;
             this.btnExplorerRemove.Click += new System.EventHandler(this.btnExplorerRemove_Click);
             // 
             // btnExplorerIntegrate
             // 
             this.btnExplorerIntegrate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExplorerIntegrate.Location = new System.Drawing.Point(407, 24);
+            this.btnExplorerIntegrate.Location = new System.Drawing.Point(407, 22);
             this.btnExplorerIntegrate.Name = "btnExplorerIntegrate";
-            this.btnExplorerIntegrate.Size = new System.Drawing.Size(119, 34);
+            this.btnExplorerIntegrate.Size = new System.Drawing.Size(119, 31);
             this.btnExplorerIntegrate.TabIndex = 24;
-            this.btnExplorerIntegrate.Text = "Install";
+            this.btnExplorerIntegrate.Text = "安装";
             this.btnExplorerIntegrate.UseVisualStyleBackColor = true;
             this.btnExplorerIntegrate.Click += new System.EventHandler(this.btnExplorerIntegrate_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(16, 24);
+            this.label16.Location = new System.Drawing.Point(16, 22);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(268, 13);
+            this.label16.Size = new System.Drawing.Size(245, 12);
             this.label16.TabIndex = 14;
-            this.label16.Text = "Integrate RED into the Windows Explorer context menu";
+            this.label16.Text = "将RED集成到Windows资源管理器上下文菜单中";
             // 
             // gbOptions
             // 
@@ -689,98 +689,95 @@
             this.gbOptions.Controls.Add(this.cbClipboardDetection);
             this.gbOptions.Controls.Add(this.cbIgnoreHiddenFolders);
             this.gbOptions.Controls.Add(this.cbIgnore0kbFiles);
-            this.gbOptions.Location = new System.Drawing.Point(14, 12);
+            this.gbOptions.Location = new System.Drawing.Point(14, 11);
             this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(669, 330);
+            this.gbOptions.Size = new System.Drawing.Size(669, 305);
             this.gbOptions.TabIndex = 19;
             this.gbOptions.TabStop = false;
-            this.gbOptions.Text = "General options";
+            this.gbOptions.Text = "常规选项";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label25.Location = new System.Drawing.Point(36, 170);
+            this.label25.Location = new System.Drawing.Point(36, 157);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(439, 26);
+            this.label25.Size = new System.Drawing.Size(503, 24);
             this.label25.TabIndex = 22;
-            this.label25.Text = "Whenever you start or switch into the application it will check if your clipboard" +
-    " contains\r\na path to a directory (e.g. C:/test) and if it detects a directory it" +
-    " will use it as the root directory";
+            this.label25.Text = "每当你启动或切换到该应用程序时，它都会检查你的剪贴板中是否包含\n一个指向某个目录（例如C:/test）的路径，如果它检测到是一个目录，则将其作为根目录使用";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label11.Location = new System.Drawing.Point(36, 53);
+            this.label11.Location = new System.Drawing.Point(36, 49);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(409, 13);
+            this.label11.Size = new System.Drawing.Size(353, 12);
             this.label11.TabIndex = 20;
-            this.label11.Text = "An empty file means files with zero bytes this option also applies to multiple em" +
-    "pty files.";
+            this.label11.Text = "空文件指的是字节数为零的文件，此选项同样适用于多个空文件。";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label21.Location = new System.Drawing.Point(36, 105);
+            this.label21.Location = new System.Drawing.Point(36, 97);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(586, 26);
+            this.label21.Size = new System.Drawing.Size(491, 24);
             this.label21.TabIndex = 19;
-            this.label21.Text = resources.GetString("label21.Text");
+            this.label21.Text = "此选项会在查找和删除过程中禁用列表更新，仅在结束时显示最终结果。\n你可能看不到进度，但速度会快很多。提示：将暂停时间设置为0，可进一步提高删除速度。";
             // 
             // cbFastSearchMode
             // 
             this.cbFastSearchMode.AutoSize = true;
-            this.cbFastSearchMode.Location = new System.Drawing.Point(19, 86);
+            this.cbFastSearchMode.Location = new System.Drawing.Point(19, 79);
             this.cbFastSearchMode.Name = "cbFastSearchMode";
-            this.cbFastSearchMode.Size = new System.Drawing.Size(75, 17);
+            this.cbFastSearchMode.Size = new System.Drawing.Size(72, 16);
             this.cbFastSearchMode.TabIndex = 18;
-            this.cbFastSearchMode.Text = "Fast mode";
+            this.cbFastSearchMode.Text = "快速模式";
             this.cbFastSearchMode.UseVisualStyleBackColor = true;
             // 
             // cbHideScanErrors
             // 
             this.cbHideScanErrors.AutoSize = true;
-            this.cbHideScanErrors.Location = new System.Drawing.Point(19, 288);
+            this.cbHideScanErrors.Location = new System.Drawing.Point(19, 266);
             this.cbHideScanErrors.Name = "cbHideScanErrors";
-            this.cbHideScanErrors.Size = new System.Drawing.Size(238, 17);
+            this.cbHideScanErrors.Size = new System.Drawing.Size(216, 16);
             this.cbHideScanErrors.TabIndex = 16;
             this.cbHideScanErrors.Tag = "hide_scan_errors";
-            this.cbHideScanErrors.Text = "Hide search errors (like access denied errors)";
+            this.cbHideScanErrors.Text = "隐藏搜索错误（如访问被拒绝错误）";
             this.cbHideScanErrors.UseVisualStyleBackColor = true;
             // 
             // cbIgnoreErrors
             // 
             this.cbIgnoreErrors.AutoSize = true;
-            this.cbIgnoreErrors.Location = new System.Drawing.Point(19, 252);
+            this.cbIgnoreErrors.Location = new System.Drawing.Point(19, 233);
             this.cbIgnoreErrors.Name = "cbIgnoreErrors";
-            this.cbIgnoreErrors.Size = new System.Drawing.Size(157, 17);
+            this.cbIgnoreErrors.Size = new System.Drawing.Size(108, 16);
             this.cbIgnoreErrors.TabIndex = 15;
             this.cbIgnoreErrors.Tag = "ignore_deletion_errors";
-            this.cbIgnoreErrors.Text = "Ignore errors during deletion\r\n";
+            this.cbIgnoreErrors.Text = "删除时忽略错误\n";
             this.cbIgnoreErrors.UseVisualStyleBackColor = true;
             // 
             // cbClipboardDetection
             // 
             this.cbClipboardDetection.AutoSize = true;
-            this.cbClipboardDetection.Location = new System.Drawing.Point(19, 151);
+            this.cbClipboardDetection.Location = new System.Drawing.Point(19, 139);
             this.cbClipboardDetection.Name = "cbClipboardDetection";
-            this.cbClipboardDetection.Size = new System.Drawing.Size(162, 17);
+            this.cbClipboardDetection.Size = new System.Drawing.Size(132, 16);
             this.cbClipboardDetection.TabIndex = 5;
             this.cbClipboardDetection.Tag = "clipboard_detection";
-            this.cbClipboardDetection.Text = "Detect paths in the clipboard";
+            this.cbClipboardDetection.Text = "检测剪贴板中的路径";
             this.cbClipboardDetection.UseVisualStyleBackColor = true;
             // 
             // cbIgnoreHiddenFolders
             // 
             this.cbIgnoreHiddenFolders.AutoSize = true;
-            this.cbIgnoreHiddenFolders.Location = new System.Drawing.Point(19, 216);
+            this.cbIgnoreHiddenFolders.Location = new System.Drawing.Point(19, 199);
             this.cbIgnoreHiddenFolders.Name = "cbIgnoreHiddenFolders";
-            this.cbIgnoreHiddenFolders.Size = new System.Drawing.Size(142, 17);
+            this.cbIgnoreHiddenFolders.Size = new System.Drawing.Size(96, 16);
             this.cbIgnoreHiddenFolders.TabIndex = 4;
             this.cbIgnoreHiddenFolders.Tag = "ignore_hidden";
-            this.cbIgnoreHiddenFolders.Text = "Ignore hidden directories";
+            this.cbIgnoreHiddenFolders.Text = "忽略隐藏目录";
             this.cbIgnoreHiddenFolders.UseVisualStyleBackColor = true;
             // 
             // cbIgnore0kbFiles
@@ -788,12 +785,12 @@
             this.cbIgnore0kbFiles.AutoSize = true;
             this.cbIgnore0kbFiles.Checked = true;
             this.cbIgnore0kbFiles.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbIgnore0kbFiles.Location = new System.Drawing.Point(19, 34);
+            this.cbIgnore0kbFiles.Location = new System.Drawing.Point(19, 31);
             this.cbIgnore0kbFiles.Name = "cbIgnore0kbFiles";
-            this.cbIgnore0kbFiles.Size = new System.Drawing.Size(268, 17);
+            this.cbIgnore0kbFiles.Size = new System.Drawing.Size(204, 16);
             this.cbIgnore0kbFiles.TabIndex = 3;
             this.cbIgnore0kbFiles.Tag = "ignore_0kb_files";
-            this.cbIgnore0kbFiles.Text = "Directories with empty files will be considered empty";
+            this.cbIgnore0kbFiles.Text = "包含空文件的目录将被视为空目录";
             this.cbIgnore0kbFiles.UseVisualStyleBackColor = true;
             // 
             // tabIgnoreList
@@ -805,7 +802,7 @@
             this.tabIgnoreList.Location = new System.Drawing.Point(4, 27);
             this.tabIgnoreList.Name = "tabIgnoreList";
             this.tabIgnoreList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabIgnoreList.Size = new System.Drawing.Size(698, 544);
+            this.tabIgnoreList.Size = new System.Drawing.Size(698, 500);
             this.tabIgnoreList.TabIndex = 4;
             this.tabIgnoreList.Text = "Ignore list";
             this.tabIgnoreList.UseVisualStyleBackColor = true;
@@ -814,12 +811,11 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label22.Location = new System.Drawing.Point(14, 38);
+            this.label22.Location = new System.Drawing.Point(14, 35);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(435, 13);
+            this.label22.Size = new System.Drawing.Size(413, 12);
             this.label22.TabIndex = 14;
-            this.label22.Text = "Use one item per line and you can specify a directory name or a full path like \"C" +
-    ":/example\".";
+            this.label22.Text = "每行使用一个项目，您可以指定一个目录名称或完整路径，如“C:/example”";
             // 
             // tbIgnoreFolders
             // 
@@ -827,23 +823,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbIgnoreFolders.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIgnoreFolders.Location = new System.Drawing.Point(14, 64);
+            this.tbIgnoreFolders.Location = new System.Drawing.Point(14, 59);
             this.tbIgnoreFolders.Multiline = true;
             this.tbIgnoreFolders.Name = "tbIgnoreFolders";
             this.tbIgnoreFolders.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbIgnoreFolders.Size = new System.Drawing.Size(668, 467);
+            this.tbIgnoreFolders.Size = new System.Drawing.Size(668, 431);
             this.tbIgnoreFolders.TabIndex = 6;
             this.tbIgnoreFolders.WordWrap = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(14, 16);
+            this.label10.Location = new System.Drawing.Point(14, 15);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(458, 13);
+            this.label10.Size = new System.Drawing.Size(389, 12);
             this.label10.TabIndex = 13;
-            this.label10.Text = "When a directory name matches an item of this list it will be skipped (including " +
-    "all subdirectories).";
+            this.label10.Text = "当目录名称与此列表中的某一项匹配时，该目录及其所有子目录将被跳过";
             // 
             // tabAdvanced
             // 
@@ -856,7 +851,7 @@
             this.tabAdvanced.Location = new System.Drawing.Point(4, 27);
             this.tabAdvanced.Name = "tabAdvanced";
             this.tabAdvanced.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAdvanced.Size = new System.Drawing.Size(698, 544);
+            this.tabAdvanced.Size = new System.Drawing.Size(698, 500);
             this.tabAdvanced.TabIndex = 3;
             this.tabAdvanced.Text = "Advanced settings";
             this.tabAdvanced.UseVisualStyleBackColor = true;
@@ -876,58 +871,58 @@
             this.gbAdvancedSettings.Controls.Add(this.label4);
             this.gbAdvancedSettings.Controls.Add(this.label3);
             this.gbAdvancedSettings.Controls.Add(this.nuInfiniteLoopDetectionCount);
-            this.gbAdvancedSettings.Location = new System.Drawing.Point(15, 17);
+            this.gbAdvancedSettings.Location = new System.Drawing.Point(15, 16);
             this.gbAdvancedSettings.Name = "gbAdvancedSettings";
-            this.gbAdvancedSettings.Size = new System.Drawing.Size(668, 160);
+            this.gbAdvancedSettings.Size = new System.Drawing.Size(668, 148);
             this.gbAdvancedSettings.TabIndex = 30;
             this.gbAdvancedSettings.TabStop = false;
-            this.gbAdvancedSettings.Text = "Advanced settings";
+            this.gbAdvancedSettings.Text = "高级设置";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label20.Location = new System.Drawing.Point(16, 134);
+            this.label20.Location = new System.Drawing.Point(16, 124);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(314, 13);
+            this.label20.Size = new System.Drawing.Size(269, 12);
             this.label20.TabIndex = 19;
-            this.label20.Text = "This gives you time to stop the process but is not really necessary";
+            this.label20.Text = "这给了你时间来停止这个过程，但其实并没有必要";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label26.Location = new System.Drawing.Point(357, 79);
+            this.label26.Location = new System.Drawing.Point(357, 73);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(246, 13);
+            this.label26.Size = new System.Drawing.Size(161, 12);
             this.label26.TabIndex = 28;
-            this.label26.Text = "This allows you to ignore freshly created directories";
+            this.label26.Text = "这使您可以忽略新创建的目录";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label27.Location = new System.Drawing.Point(16, 78);
+            this.label27.Location = new System.Drawing.Point(16, 72);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(259, 13);
+            this.label27.Size = new System.Drawing.Size(125, 12);
             this.label27.TabIndex = 29;
-            this.label27.Text = "RED will only able to find empty directories that are N ";
+            this.label27.Text = "RED只能找到N个空目录";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(357, 56);
+            this.label19.Location = new System.Drawing.Point(357, 52);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(167, 13);
+            this.label19.Size = new System.Drawing.Size(191, 12);
             this.label19.TabIndex = 26;
-            this.label19.Text = "Skip folders less than N hours old:";
+            this.label19.Text = "跳过创建时间少于N小时的文件夹：";
             // 
             // cbKeepSystemFolders
             // 
             this.cbKeepSystemFolders.AutoSize = true;
             this.cbKeepSystemFolders.Checked = true;
             this.cbKeepSystemFolders.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbKeepSystemFolders.Location = new System.Drawing.Point(248, 26);
+            this.cbKeepSystemFolders.Location = new System.Drawing.Point(248, 24);
             this.cbKeepSystemFolders.Name = "cbKeepSystemFolders";
             this.cbKeepSystemFolders.Size = new System.Drawing.Size(15, 14);
             this.cbKeepSystemFolders.TabIndex = 2;
@@ -936,7 +931,7 @@
             // 
             // nuFolderAge
             // 
-            this.nuFolderAge.Location = new System.Drawing.Point(588, 52);
+            this.nuFolderAge.Location = new System.Drawing.Point(588, 48);
             this.nuFolderAge.Margin = new System.Windows.Forms.Padding(2);
             this.nuFolderAge.Maximum = new decimal(new int[] {
             96,
@@ -944,42 +939,42 @@
             0,
             0});
             this.nuFolderAge.Name = "nuFolderAge";
-            this.nuFolderAge.Size = new System.Drawing.Size(53, 20);
+            this.nuFolderAge.Size = new System.Drawing.Size(53, 21);
             this.nuFolderAge.TabIndex = 25;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 113);
+            this.label7.Location = new System.Drawing.Point(16, 104);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(218, 13);
+            this.label7.Size = new System.Drawing.Size(215, 12);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Pause between each deletion in milliseconds";
+            this.label7.Text = "每次删除操作之间的暂停时间（毫秒）:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(16, 26);
+            this.label24.Location = new System.Drawing.Point(16, 24);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(190, 13);
+            this.label24.Size = new System.Drawing.Size(125, 12);
             this.label24.TabIndex = 27;
-            this.label24.Text = "Skip system directories (recommended)";
+            this.label24.Text = "跳过系统目录（推荐）";
             // 
             // nuPause
             // 
-            this.nuPause.Location = new System.Drawing.Point(249, 109);
+            this.nuPause.Location = new System.Drawing.Point(249, 101);
             this.nuPause.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.nuPause.Name = "nuPause";
-            this.nuPause.Size = new System.Drawing.Size(53, 20);
+            this.nuPause.Size = new System.Drawing.Size(53, 21);
             this.nuPause.TabIndex = 8;
             // 
             // nuMaxDepth
             // 
-            this.nuMaxDepth.Location = new System.Drawing.Point(249, 52);
+            this.nuMaxDepth.Location = new System.Drawing.Point(249, 48);
             this.nuMaxDepth.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -991,7 +986,7 @@
             0,
             -2147483648});
             this.nuMaxDepth.Name = "nuMaxDepth";
-            this.nuMaxDepth.Size = new System.Drawing.Size(53, 20);
+            this.nuMaxDepth.Size = new System.Drawing.Size(53, 21);
             this.nuMaxDepth.TabIndex = 7;
             this.nuMaxDepth.Value = new decimal(new int[] {
             1,
@@ -1002,31 +997,31 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(357, 119);
+            this.label4.Location = new System.Drawing.Point(357, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 13);
+            this.label4.Size = new System.Drawing.Size(191, 12);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Infinite-loop detection: Stop after N errors";
+            this.label4.Text = "无限循环检测：出现N次错误后停止";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 56);
+            this.label3.Location = new System.Drawing.Point(16, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 13);
+            this.label3.Size = new System.Drawing.Size(191, 12);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Max directory nesting depth (-1 = infinite):";
+            this.label3.Text = "最大目录嵌套深度（-1表示无限）:";
             // 
             // nuInfiniteLoopDetectionCount
             // 
-            this.nuInfiniteLoopDetectionCount.Location = new System.Drawing.Point(588, 115);
+            this.nuInfiniteLoopDetectionCount.Location = new System.Drawing.Point(588, 106);
             this.nuInfiniteLoopDetectionCount.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.nuInfiniteLoopDetectionCount.Name = "nuInfiniteLoopDetectionCount";
-            this.nuInfiniteLoopDetectionCount.Size = new System.Drawing.Size(53, 20);
+            this.nuInfiniteLoopDetectionCount.Size = new System.Drawing.Size(53, 21);
             this.nuInfiniteLoopDetectionCount.TabIndex = 21;
             this.nuInfiniteLoopDetectionCount.Value = new decimal(new int[] {
             10,
@@ -1037,22 +1032,22 @@
             // btnResetConfig
             // 
             this.btnResetConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnResetConfig.Location = new System.Drawing.Point(318, 505);
+            this.btnResetConfig.Location = new System.Drawing.Point(318, 466);
             this.btnResetConfig.Name = "btnResetConfig";
-            this.btnResetConfig.Size = new System.Drawing.Size(183, 27);
+            this.btnResetConfig.Size = new System.Drawing.Size(183, 25);
             this.btnResetConfig.TabIndex = 23;
-            this.btnResetConfig.Text = "Reset settings to default values";
+            this.btnResetConfig.Text = "将设置重置为默认值";
             this.btnResetConfig.UseVisualStyleBackColor = true;
             this.btnResetConfig.Click += new System.EventHandler(this.btnResetConfig_Click);
             // 
             // btnCopyDebugInfo
             // 
             this.btnCopyDebugInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCopyDebugInfo.Location = new System.Drawing.Point(15, 505);
+            this.btnCopyDebugInfo.Location = new System.Drawing.Point(15, 466);
             this.btnCopyDebugInfo.Name = "btnCopyDebugInfo";
-            this.btnCopyDebugInfo.Size = new System.Drawing.Size(297, 27);
+            this.btnCopyDebugInfo.Size = new System.Drawing.Size(297, 25);
             this.btnCopyDebugInfo.TabIndex = 24;
-            this.btnCopyDebugInfo.Text = "Copy debugging information to clipboard (for error reports)";
+            this.btnCopyDebugInfo.Text = "将调试信息复制到剪贴板（用于错误报告）";
             this.btnCopyDebugInfo.UseVisualStyleBackColor = true;
             this.btnCopyDebugInfo.Click += new System.EventHandler(this.btnCopyDebugInfo_Click);
             // 
@@ -1065,19 +1060,19 @@
             this.gbIgnoreFilenames.Controls.Add(this.label14);
             this.gbIgnoreFilenames.Controls.Add(this.tbIgnoreFiles);
             this.gbIgnoreFilenames.Controls.Add(this.label2);
-            this.gbIgnoreFilenames.Location = new System.Drawing.Point(15, 194);
+            this.gbIgnoreFilenames.Location = new System.Drawing.Point(15, 179);
             this.gbIgnoreFilenames.Name = "gbIgnoreFilenames";
-            this.gbIgnoreFilenames.Size = new System.Drawing.Size(668, 303);
+            this.gbIgnoreFilenames.Size = new System.Drawing.Size(668, 280);
             this.gbIgnoreFilenames.TabIndex = 20;
             this.gbIgnoreFilenames.TabStop = false;
-            this.gbIgnoreFilenames.Text = "Filenames to ignore";
+            this.gbIgnoreFilenames.Text = "要忽略的文件名";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(15, 60);
+            this.label23.Location = new System.Drawing.Point(15, 55);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(357, 78);
+            this.label23.Size = new System.Drawing.Size(473, 72);
             this.label23.TabIndex = 13;
             this.label23.Text = resources.GetString("label23.Text");
             // 
@@ -1086,10 +1081,10 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.Info;
             this.label14.ForeColor = System.Drawing.Color.DarkRed;
-            this.label14.Location = new System.Drawing.Point(484, 64);
+            this.label14.Location = new System.Drawing.Point(484, 59);
             this.label14.Name = "label14";
             this.label14.Padding = new System.Windows.Forms.Padding(5);
-            this.label14.Size = new System.Drawing.Size(165, 62);
+            this.label14.Size = new System.Drawing.Size(207, 58);
             this.label14.TabIndex = 12;
             this.label14.Text = "Warning: Use  this feature with \r\ncare, a bad pattern could \r\npotentially cause a" +
     "ccidental \r\ndeletion of important files.";
@@ -1101,29 +1096,29 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbIgnoreFiles.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIgnoreFiles.Location = new System.Drawing.Point(18, 150);
+            this.tbIgnoreFiles.Location = new System.Drawing.Point(18, 138);
             this.tbIgnoreFiles.Multiline = true;
             this.tbIgnoreFiles.Name = "tbIgnoreFiles";
             this.tbIgnoreFiles.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbIgnoreFiles.Size = new System.Drawing.Size(631, 139);
+            this.tbIgnoreFiles.Size = new System.Drawing.Size(631, 129);
             this.tbIgnoreFiles.TabIndex = 5;
             this.tbIgnoreFiles.WordWrap = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 23);
+            this.label2.Location = new System.Drawing.Point(15, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(546, 26);
+            this.label2.Size = new System.Drawing.Size(725, 24);
             this.label2.TabIndex = 10;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(318, 119);
+            this.label8.Location = new System.Drawing.Point(318, 110);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(20, 13);
+            this.label8.Size = new System.Drawing.Size(17, 12);
             this.label8.TabIndex = 18;
             this.label8.Text = "ms";
             // 
@@ -1140,7 +1135,7 @@
             this.tabAbout.ImageKey = "help";
             this.tabAbout.Location = new System.Drawing.Point(4, 27);
             this.tabAbout.Name = "tabAbout";
-            this.tabAbout.Size = new System.Drawing.Size(698, 544);
+            this.tabAbout.Size = new System.Drawing.Size(698, 500);
             this.tabAbout.TabIndex = 2;
             this.tabAbout.Text = "About";
             this.tabAbout.ToolTipText = "Shows the help and about screen";
@@ -1150,9 +1145,9 @@
             // 
             this.llGithub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.llGithub.AutoSize = true;
-            this.llGithub.Location = new System.Drawing.Point(11, 103);
+            this.llGithub.Location = new System.Drawing.Point(11, 95);
             this.llGithub.Name = "llGithub";
-            this.llGithub.Size = new System.Drawing.Size(38, 13);
+            this.llGithub.Size = new System.Drawing.Size(41, 12);
             this.llGithub.TabIndex = 28;
             this.llGithub.TabStop = true;
             this.llGithub.Text = "Github";
@@ -1162,9 +1157,9 @@
             // 
             this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(134, 103);
+            this.linkLabel2.Location = new System.Drawing.Point(134, 95);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(128, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(143, 12);
             this.linkLabel2.TabIndex = 27;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Feedback / Report a bug";
@@ -1174,9 +1169,9 @@
             // 
             this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(134, 81);
+            this.linkLabel1.Location = new System.Drawing.Point(134, 75);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(94, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(107, 12);
             this.linkLabel1.TabIndex = 26;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Check for updates";
@@ -1188,12 +1183,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbCredits.Font = new System.Drawing.Font("Lucida Console", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCredits.Location = new System.Drawing.Point(14, 131);
+            this.tbCredits.Location = new System.Drawing.Point(14, 121);
             this.tbCredits.Multiline = true;
             this.tbCredits.Name = "tbCredits";
             this.tbCredits.ReadOnly = true;
             this.tbCredits.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbCredits.Size = new System.Drawing.Size(669, 400);
+            this.tbCredits.Size = new System.Drawing.Size(669, 370);
             this.tbCredits.TabIndex = 25;
             this.tbCredits.Text = resources.GetString("tbCredits.Text");
             this.tbCredits.WordWrap = false;
@@ -1201,9 +1196,9 @@
             // lblRedStats
             // 
             this.lblRedStats.AutoSize = true;
-            this.lblRedStats.Location = new System.Drawing.Point(11, 56);
+            this.lblRedStats.Location = new System.Drawing.Point(11, 52);
             this.lblRedStats.Name = "lblRedStats";
-            this.lblRedStats.Size = new System.Drawing.Size(165, 13);
+            this.lblRedStats.Size = new System.Drawing.Size(209, 12);
             this.lblRedStats.TabIndex = 20;
             this.lblRedStats.Text = "{Deleted N dirs placeholder label}";
             // 
@@ -1211,7 +1206,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 36);
+            this.label5.Location = new System.Drawing.Point(11, 33);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(304, 14);
             this.label5.TabIndex = 5;
@@ -1221,9 +1216,9 @@
             // 
             this.llWebsite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.llWebsite.AutoSize = true;
-            this.llWebsite.Location = new System.Drawing.Point(11, 81);
+            this.llWebsite.Location = new System.Drawing.Point(11, 75);
             this.llWebsite.Name = "llWebsite";
-            this.llWebsite.Size = new System.Drawing.Size(93, 13);
+            this.llWebsite.Size = new System.Drawing.Size(101, 12);
             this.llWebsite.TabIndex = 19;
             this.llWebsite.TabStop = true;
             this.llWebsite.Text = "Project homepage\r\n";
@@ -1234,7 +1229,7 @@
             this.lbAppTitle.AutoSize = true;
             this.lbAppTitle.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAppTitle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbAppTitle.Location = new System.Drawing.Point(11, 15);
+            this.lbAppTitle.Location = new System.Drawing.Point(11, 14);
             this.lbAppTitle.Name = "lbAppTitle";
             this.lbAppTitle.Size = new System.Drawing.Size(213, 15);
             this.lbAppTitle.TabIndex = 0;
@@ -1243,14 +1238,14 @@
             // MainWindow
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 591);
+            this.ClientSize = new System.Drawing.Size(724, 546);
             this.Controls.Add(this.tcMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Remove Empty Directories";
+            this.Text = "删除空目录";
             this.Activated += new System.EventHandler(this.fMain_Activated);
             this.Load += new System.EventHandler(this.fMain_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.fMain_DragDrop);

@@ -39,23 +39,23 @@
             this.tbLog.Multiline = true;
             this.tbLog.Name = "tbLog";
             this.tbLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.tbLog.Size = new System.Drawing.Size(684, 462);
+            this.tbLog.Size = new System.Drawing.Size(684, 426);
             this.tbLog.TabIndex = 0;
             this.tbLog.WordWrap = false;
             this.tbLog.DoubleClick += new System.EventHandler(this.tbLog_DoubleClick);
             // 
             // LogWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 462);
+            this.ClientSize = new System.Drawing.Size(684, 426);
             this.Controls.Add(this.tbLog);
             this.MinimizeBox = false;
             this.Name = "LogWindow";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Logs";
+            this.Text = "日志";
             this.Load += new System.EventHandler(this.LogWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
